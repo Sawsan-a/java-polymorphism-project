@@ -11,7 +11,6 @@ Kleines Java-Projekt aus dem Studium zur praktischen Anwendung zentraler Konzept
 - Interfaces
 - Polymorphismus
 - `Comparable`
-- UML-Klassendiagramme
 
 ## Klassen und Interfaces
 
@@ -53,7 +52,38 @@ Oder im Terminal:
 javac src/*.java
 java -cp src Test
 ```
+## Ausführen in Visual Studio Code
 
+### Voraussetzungen
+
+Installiert sein sollten:
+
+- Java JDK, z. B. JDK 17 oder neuer
+- Visual Studio Code
+- Die Erweiterung `Extension Pack for Java`
+
+### Projekt öffnen
+
+1. Den Projektordner in Visual Studio Code öffnen.
+2. Den Ordner `src` öffnen.
+3. `Test.java` auswählen.
+4. Über der `main()`-Methode auf **Run** klicken.
+
+Alternativ:
+
+- Rechtsklick in `Test.java`
+- **Run Java** auswählen
+
+Die Ausgabe erscheint unten im Bereich **Terminal** oder **Debug Console**.
+
+### Ausführen über das Terminal
+
+Im Hauptordner des Projekts:
+
+```bash
+javac src/*.java
+java -cp src Test
+```
 ## Hinweise zur Aufgabenstellung
 
 Nach dem Hinzufügen einer abstrakten Methode `draw()` muss auch die Klasse `Grafik` als `abstract` deklariert werden. Eine abstrakte Klasse kann anschließend nicht mehr direkt mit `new Grafik(...)` instanziiert werden.
@@ -64,6 +94,4 @@ Felder in einem Java-Interface sind implizit `public static final`. Daher eignet
 
 `Tonne` kann über `Rollbar` verwendet werden, aber nicht über `Comparable`, weil die Klasse `Comparable` nicht implementiert.
 
-## UML
 
-Das UML-Modell befindet sich unter `uml/klassendiagramm.puml`.
